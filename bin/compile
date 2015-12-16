@@ -28,4 +28,5 @@ chmod +x $heroku_dir/mongo/bin/*
 
 echo "Creating runtime environment"
 export PATH="$HOME/.heroku/mongo/bin:$PATH"
-mongo -version
+$heroku_dir/mongo/bin/mongo -version
+env
