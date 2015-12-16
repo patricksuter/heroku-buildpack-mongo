@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
+#!/usr/bin/env bash
+# bin/release <build-dir>
+
+cat << EOF
 echo "MongoDB client ready"
+EOF
