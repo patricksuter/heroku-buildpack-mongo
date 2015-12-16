@@ -27,5 +27,5 @@ mv /tmp/mongodb-linux-x86_64-3.0.2/* $heroku_dir/mongo
 chmod +x $heroku_dir/mongo/bin/*
 
 echo "Creating runtime environment"
-mkdir -p $build_dir/.profile.d
-echo "export PATH=\"\$HOME/.heroku/mongo/bin:\$PATH\"" > $build_dir/.profile.d/mongo.sh
+export PATH="$HOME/.heroku/mongo/bin:$PATH"
+mongo -version
