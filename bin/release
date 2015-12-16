@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
-echo "MongoDB client ready"
 cat << EOF
-
+config_vars:
+    name: mongo_backup
+  default_process_types:
+    web: mongo -version
 EOF
